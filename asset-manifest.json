@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/react-request/static/css/main.c7baeff9.chunk.css",
+    "main.js": "/react-request/static/js/main.a78768a5.chunk.js",
+    "main.js.map": "/react-request/static/js/main.a78768a5.chunk.js.map",
+    "runtime-main.js": "/react-request/static/js/runtime-main.da3443ed.js",
+    "runtime-main.js.map": "/react-request/static/js/runtime-main.da3443ed.js.map",
+    "static/js/2.f0bbd1ed.chunk.js": "/react-request/static/js/2.f0bbd1ed.chunk.js",
+    "static/js/2.f0bbd1ed.chunk.js.map": "/react-request/static/js/2.f0bbd1ed.chunk.js.map",
+    "static/js/3.a034b46a.chunk.js": "/react-request/static/js/3.a034b46a.chunk.js",
+    "static/js/3.a034b46a.chunk.js.map": "/react-request/static/js/3.a034b46a.chunk.js.map",
+    "index.html": "/react-request/index.html",
+    "static/css/main.c7baeff9.chunk.css.map": "/react-request/static/css/main.c7baeff9.chunk.css.map",
+    "static/js/2.f0bbd1ed.chunk.js.LICENSE.txt": "/react-request/static/js/2.f0bbd1ed.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/react-request/static/media/select arrow.f0f414f0.svg",
+    "static/media/Logo.9a9d5093.svg": "/react-request/static/media/Logo.9a9d5093.svg",
+    "static/media/Union.120c846a.svg": "/react-request/static/media/Union.120c846a.svg",
+    "static/media/card cenceled.60708e7f.svg": "/react-request/static/media/card cenceled.60708e7f.svg",
+    "static/media/card done.b7a14429.svg": "/react-request/static/media/card done.b7a14429.svg",
+    "static/media/fire extinguisher.9bae9297.svg": "/react-request/static/media/fire extinguisher.9bae9297.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.da3443ed.js",
+    "static/js/2.f0bbd1ed.chunk.js",
+    "static/css/main.c7baeff9.chunk.css",
+    "static/js/main.a78768a5.chunk.js"
+  ]
+}
