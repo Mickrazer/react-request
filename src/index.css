@@ -1,0 +1,492 @@
+@font-face {
+    src: url('./fonts/Gilroy/Gilroy-Regular.woff') format('woff'),
+    url('./fonts/Gilroy/Gilroy-Regular.woff2') format('woff2'),
+    url('./fonts/Gilroy/Gilroy-Regular.ttf') format('truetype'),
+    url('./fonts/Gilroy/Gilroy-Regular.eot') format('eot');
+    font-family: 'Gilroy';
+}
+
+
+@font-face {
+    src: url('./fonts/Gilroy/Gilroy-Bold.woff') format('woff'),
+    url('./fonts/Gilroy/Gilroy-Bold.woff2') format('woff2'),
+    url('./fonts/Gilroy/Gilroy-Bold.ttf') format('truetype'),
+    url('./fonts/Gilroy/Gilroy-Bold.eot') format('eot');
+    font-family: 'Gilroy';
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #D2D2D2;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+.disabled {
+    display: none !important;
+}
+
+.page {
+    display: flex;
+}
+
+.button {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 12px;
+    border: none;
+    background: none;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 125%;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.button:last-of-type{
+    margin-bottom: 0;
+}
+
+.button svg {
+    vertical-align: middle;
+    padding: 10px 18px;
+}
+
+.button:hover {
+    background: #657CDA;
+}
+
+.button:active {
+    background: #3454D1;
+}
+
+.button:disabled {
+    background: #C6CCEC;
+}
+
+.svg__active {
+    fill: #3454D1;
+}
+
+.active {
+    color: #3454D1;
+    background: #C6CCEC;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.user {
+    border-radius: 24px;
+    background: #F6F4F5;
+    display: flex;
+    margin: 40px 0 32px 0;
+    padding: 24px;
+}
+
+.user__avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    margin-right: 16px;
+}
+
+.user__title {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 125%;
+    width: 150px;
+    color: #6F6F72;
+    align-self: center;
+}
+
+.user__name {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 125%;
+    color: #121417;
+}
+
+.nav {
+    /*временно не адаптивно*/
+    height: 80vh;
+    max-width: 184px;
+    margin: 64px 48px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav__header {
+    display: flex;
+    align-items: self-start;
+    flex-grow: 1;
+}
+
+.nav__title {
+    display: flex;
+    flex-direction: column;
+    max-height: 50px;
+    margin: 0 0 0 16px;
+}
+
+.nav__title-color{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #6F6F72;
+}
+
+.nav__logo {
+    width: 48px;
+    height: 48px;
+}
+
+.nav__buttons {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 5;
+}
+
+.nav__logout {
+    height: 24px;
+}
+
+.nav__version {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 17px;
+    color: #C4C2C4;
+    margin: 40px 0 0 18px;
+}
+
+.main {
+    /*переделать размеры*/
+    height: 62vh;
+    border-radius: 24px;
+    background: #F6F4F5;
+    padding: 32px;
+    width: 43%;
+}
+
+.main__cards {
+    height: 50vh;
+    overflow: scroll;
+}
+
+.main__block {
+    position: relative;
+    width: 76vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main__title {
+    margin-bottom: 32px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 125%;
+}
+
+
+.card {
+    /*razmeri*/
+    position: relative;
+    width: 90%;
+    border-radius: 16px;
+    background: rgba(196, 194, 196, .15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 20px 0 20px 20px;
+    overflow: hidden;
+}
+
+.card__visible{
+    overflow: visible;
+}
+
+.card__border{
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 40px;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.card6{
+    background: rgba(211, 236, 193, 0.2);
+}
+.card__border6{
+    background: #6BD425;
+    box-shadow: 0px 0px 24px 4px #6BD425;
+}
+
+.card8{
+    background: rgba(245, 200, 189, 0.2);
+}
+
+.card__border8{
+    background: #F34213;
+    box-shadow: 0px 0px 24px 4px #F34213;
+}
+
+.card__completed{
+    width: 96%;
+    padding-right: 20px;
+}
+
+.card__subtitle_grow{
+    flex-grow: 0;
+}
+
+.card__in-progress{
+    background: rgba(248, 229, 187, 0.2);
+}
+
+.card__author{
+    align-self: flex-end;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news__card{
+    height: 96px;
+}
+
+
+.card__title {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+    flex-grow: 1;
+}
+
+.card__subtitle {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 125%;
+    color: #6F6F72;
+
+}
+
+.card__subtitle_grow{
+    flex-grow: 3;
+}
+
+.card__date {
+    color: #C4C2C4;
+}
+
+.card__period {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 125%;
+}
+
+.card__icon {
+    margin: 0 -8px 0 24px;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup__title {
+    margin: 0;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.popup__input {
+    width: 100%;
+    height: 47px;
+    border: 2px solid #C4C2C4;
+    font-size: 14px;
+    line-height: 17px;
+    box-sizing: border-box;
+    border-radius: 14px;
+    padding: 11px 12px 11px 16px;
+    margin-bottom: 24px;
+}
+
+.popup__input:last-of-type {
+    margin-bottom: 0;
+}
+
+.popup__image {
+    height: 80vh;
+    width: 80vw;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.popup__image-background {
+    height: 80vh;
+    width: 80vw;
+    background-size: cover;
+}
+
+.popup__form {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.popup__content {
+    width: 480px;
+    min-height: 80vh;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 34px 36px;
+}
+
+.popup__close {
+    width: 26px;
+    position: absolute;
+
+    right: 35px;
+    cursor: pointer;
+}
+.popup__chat{
+    width: 100%;
+    height: 55vh;
+}
+
+.popup__button {
+    max-width: 48px;
+    height: 48px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    font-size: 36px;
+    background: #3454D1;
+    margin-left: 8px;
+}
+
+.popup__button_active {
+    background: #000000;
+    border-radius: 2px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.popup.popup_is-opened {
+    display: flex;
+}
+
+.archive{
+    position: relative;
+    width: 76vw;
+    height: 70vh;
+    background: #F6F4F5;
+    border-radius: 24px;
+    padding: 32px 32px 0;
+}
+
+.archive__header{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.archive__input{
+    align-self: center;
+    flex-grow: 8;
+    padding: 11px 11px 11px 48px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 125%;
+    border: 2px solid #C4C2C4;
+    border-radius: 14px;
+    margin-right: 32px;
+}
+
+.archive__select{
+    min-width: 232px;
+    flex-grow: 1;
+    border-radius: 12px;
+    padding: 11px 11px 11px 48px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 125%;
+    color: #F6F4F5;
+    -webkit-appearance: none;
+    background: url("./images/select arrow.svg") no-repeat right #3454D1;
+    background-position-x: 205px;
+}
+
+.archive__svg{
+    position: absolute;
+    left: 18px;
+}
+
+.archive__block{
+    margin-top: 32px;
+}
+.archive__block-select{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+
