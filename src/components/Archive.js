@@ -47,7 +47,7 @@ function Archive() {
                             fill="#F6F4F5"/>
                     </svg>
                     <select name="select" className="archive__select">
-                        <option value="value1" defaultValue>По дате появления</option>
+                        <option value="value1" defaultValue >По дате появления</option>
                         <option value="value2">Значение 2</option>
                         <option value="value3">Значение 3</option>
                     </select>
