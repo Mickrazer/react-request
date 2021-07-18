@@ -104,6 +104,6 @@ class Api {
 }
 
 const api = new Api('http://140.82.32.146/', 'bearer ' +
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjY1NTU2NzQsInVzZXJfbmFtZSI6InVzZXIyIiwiYXV0aG9yaXRpZXMiOlsicmVhZCJdLCJqdGkiOiJlZjY5NzgxOC0wYjYzLTQ2MGUtOWUyYi0wNzZhNGFkZDNjYjkiLCJjbGllbnRfaWQiOiJjbGllbnQiLCJzY29wZSI6WyJyZWFkIl19.ugyRsoBx2D3Ck-PistE3FFvDlq3rGyo_BWMwGEko4a4");
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjY2Mzg4OTksInVzZXJfbmFtZSI6InVzZXIyIiwiYXV0aG9yaXRpZXMiOlsicmVhZCJdLCJqdGkiOiIzMzgzZTM4MC00NjNlLTQ2OWUtYjNmNi0xNWU2N2Y1ZmY2ZmIiLCJjbGllbnRfaWQiOiJjbGllbnQiLCJzY29wZSI6WyJyZWFkIl19.9BPC-Ha54r8fBLnrN93fl5uOfnkY-nBU4RFnB9IInKM");
 
 export default api;
